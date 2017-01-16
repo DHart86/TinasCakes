@@ -384,6 +384,10 @@ footer .glyphicon {
   .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color: #feb0a9;
 }
+.jumbotron h1 {
+  margin-top:0;
+}
+
 }
 
 @media screen and (max-width: 480px) {
