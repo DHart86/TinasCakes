@@ -12,9 +12,14 @@ h2 {
   font-size: 24px;
   text-transform: uppercase;
   color: #303030;
-  font-weight: 600;
+  font-weight: 300;
   margin-bottom: 30px;
   text-align: center;
+  font-family: 'Montserrat', cursive;
+}
+
+#contact h2 {
+  text-align: left;
 }
 
 h4 {
@@ -27,15 +32,22 @@ h4 {
 
 .jumbotron {
   background-color: #42c4ac;
+ /* background-image:url("http://www.happycakescupcake.com/ss6new.jpg");
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+      background-size: 100% 100vh; */
+
   color: #fff;
   padding: 100px 25px;
   font-family: Montserrat, sans-serif;
   height: 100vh;
+  border-bottom: 5px solid pink;
 }
 
 
 .jumbotron p {
-  color: #eee;
+  color: #ddd;
   font-size: 16px;
   font-family: Montserrat, sans-serif;
   letter-spacing: 4px;
@@ -44,21 +56,24 @@ h4 {
 .jumbotron h1 {
   font-family: 'Amatic SC', cursive;
   font-size: 103px;
-  text-shadow: 2px 2px 2px #feb0a9;
+  color: white;
 }
 
-.container-fluid {
-  padding: 60px 50px;
+.price {
+  font-family: 'Amatic SC', cursive;
+  font-size: 60px;
+  text-shadow: 2px 2px 2px gray;
 }
 
-.bg-grey {
-  background-color: #f6f6f6;
-}
+
 
 p {
   color: #222;
 }
 
+glyphicon-lamp {
+  text-align:center;
+}
 
 .logo-small {
   color: #feb0a9;
@@ -101,11 +116,15 @@ p {
 }
 
 .carousel-indicators li {
-  border-color: #FF5252;
+  border: 3px solid white;
+  width: 20px;
+  height: 20px;
 }
 
 .carousel-indicators li.active {
-  background-color: #FF8A80;
+  background-color: #feb0a9;
+  width: 20px;
+  height: 20px;
 }
 
 .item h4 {
@@ -113,7 +132,7 @@ p {
   line-height: 1.375em;
   font-weight: 400;
   font-style: italic;
-  margin: 70px 0;
+  margin: 50px 0;
 }
 
 .item span {
@@ -124,10 +143,15 @@ p {
   border: 1px solid #feb0a9;
   border-radius: 0 !important;
   transition: box-shadow 0.5s;
+  box-shadow: 0px 0px 30px -5px #777;
 }
 
 .panel:hover {
   box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
+}
+
+.panel-footer .btn {
+  box-shadow: 0px 0px 22px -4px gray;
 }
 
 .panel-footer .btn:hover {
@@ -145,6 +169,10 @@ p {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+}
+
+.panel-heading p {
+  color: white;
 }
 
 .panel-footer {
@@ -182,7 +210,11 @@ p {
 
 .navbar li a,
 .navbar .navbar-brand {
-  color: #fff !important;
+  color: white !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+     background-color: white !important;
 }
 
 .navbar-brand > img {
@@ -217,9 +249,10 @@ footer .glyphicon {
 }
 
 
-i {
-  color: #feb0a9;
+.fa-chevron-circle-up {
+  color: #42c4ac;
   margin-bottom: 10px;
+  text-shadow: 0px 2px 2px gray;
 }
 
 @-webkit-keyframes bounce {
@@ -251,24 +284,59 @@ i {
 }
 
 #contactButton {
-  background-color: #feb0a9;
+  background-color: #42c4ac !important;
   color: white;
   border: none;
   padding: 20px;
   width: 100%;
   font-size: 25px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
 }
 
 #contactButton:hover {
-  border: 1px solid #FF1744;
-  background-color: #fff !important;
-  color: #FF1744;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  color: white;
+}
+
+
+
+#contactButton:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+
+
+#contactButton:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+
+
+
+
+.logo-small {
+  text-shadow: 1px 1px 1px black;
 }
 
 .cta {
   background-color: #feb0a9;
   color: #fff;
-  text-shadow: 1px 1px gray;
+  border: 0;
+  padding:20px;
+  text-shadow: 1px 1px black;
   box-shadow: 2px 2px 2px #777;
 }
 
@@ -313,6 +381,9 @@ i {
     width: 100%;
     margin-bottom: 35px;
   }
+  .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #feb0a9;
+}
 }
 
 @media screen and (max-width: 480px) {
@@ -350,14 +421,26 @@ i {
 
 #contactButton {
   background-color: #42c4ac;
+  text-shadow: 1px 1px black;
+  box-shadow: 2px 2px 2px #777;
+  margin-top:10px
 }
 #contact {
   color: white;
 }
 
+.form-group {
+  overflow: hidden;
+  padding-bottom:20px;
+}
 
+#googleMap {
+  box-shadow: 0px 0px 30px -5px #777;
+}
 
-
+hr {
+  width: 60%
+}
 
 
 
@@ -369,35 +452,140 @@ i {
 
 .modal-header {
   border-bottom: 0;
+  margin-top:20px;
 }
 .modal-footer {
   border-top: 0;
+  text-align:center;
 }
 
 .modal-content {
-background-color: pink;
-
+background-color: rgba(0,0,0,.5);
+width: 100vw;
+height:100vh;
 }
 .closeButton {
-background-color: turquoise;
+background-color: #42c4ac;
 color: white;
 font-size: 22px;
 padding: 20px;
-}
-.close {
-font-size: 80px;
-text-shadow: 2px 2px pink;
+padding-left:40px;
+padding-right:40px;
+border:none;
 }
 
+.closeButton:hover {
+  background-color: #69d0bd;
+  color:white;
+}
+
+.close {
+ color:#111;
+font-size: 80px;
+opacity: 0.7;
+transition: all .1s ease-in-out;
+}
+
+.close:hover {
+  color:#feb0a9;
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.modal-dialog {
+   margin:0px;
+}
 
 #modalPic {
   max-height: 80vh;
   max-width: 600px;
-  border: 3px solid #333;
+  border: 2px solid pink;
+}
+
+@media (min-width: 768px)
+{
+.modal-dialog {
+  margin:0;
+}
+}
+
+#social-section {
+    padding: 30px 0;
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.socialList {
+  list-style: none;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.social-item {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.fb {
+  color: #777;
+  font-size: 30px;
+  text-shadow: 0px 1px 1px #444; 
+}
+
+.fb:hover {
+  color: #feb0a9
+}
+
+.fa-birthday-cake {
+  font-size: 90px;
+  opacity: 0.3;
+  color:white;
+  margin-top:20px;
+}
+
+.profImg {
+  width: 60%;
+  height:auto;
+  border: 2px solid pink;
+  border-radius: 125px;
+  box-shadow: 0px 0px 0px 0px pink;
+  animation-timing:ease-in-out;
+  animation: borderblob 4s infinite;
+}
+
+@keyframes borderblob {
+    50% {box-shadow: 1px 1px 32px -2px #FF1744;}
+}
+
+.centerImg {
+  text-align:center;
+}
+
+#myCarousel {
+  background-color: #42c4ac;
+  padding: 20px;
+}
+
+#myCarousel h4 {
+  color: white;
+}
+
+.footy {
+  background-color: #eee;
 }
 
 
 
 
+/* Parallax?
 
+element.style {
+    background-image: url(/sites/imore.com/files/styles/xlarge_wm_blw/public/field/image/2016/10/iphone-6s-iphone-7-plus.jpg?itok=6Hj7vbo8);
+}
+@media (min-width: 1050px)
+.hero {
+    background-attachment: fixed;
+}
 
+*/
