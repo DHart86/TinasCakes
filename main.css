@@ -457,9 +457,11 @@ hr {
   text-align:center;
 }
 
+
+
 .modal-content {
 background-color: rgba(0,0,0,.5);
-width: 100vw;
+width: 100%;
 height:100vh;
 }
 .closeButton {
@@ -505,6 +507,9 @@ transition: all .1s ease-in-out;
 .modal-dialog {
   margin:0;
 }
+.modal-content {
+   width:100vw;
+  }
 }
 
 #social-section {
