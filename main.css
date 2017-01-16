@@ -505,7 +505,7 @@ text-shadow: 0 0 5px #fff;
   max-height: 90vh;
   max-width: 600px;
   border: 1px solid black;
-  margin-top: -70px;
+  margin-top: -40px;
 }
 
 @media (min-width: 768px)
