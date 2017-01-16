@@ -244,7 +244,8 @@ footer .glyphicon {
 .cakePic {
  max-height: 350px;
  object-fit: contain;
- border-radius: 35px;
+ border-radius: 25px;
+ opacity: 0.9;
 }
 
 
