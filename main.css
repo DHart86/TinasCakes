@@ -95,7 +95,6 @@ glyphicon-lamp {
 .thumbnail img {
   height: 350px;
   margin-bottom: 10px;
-  opacity: 0.8;
 }
 
 .cakePic:hover {
@@ -501,6 +500,7 @@ text-shadow: 0 0 5px #fff;
   max-height: 80vh;
   max-width: 600px;
   border: 1px solid black;
+  margin-top: -70px;
 }
 
 @media (min-width: 768px)
