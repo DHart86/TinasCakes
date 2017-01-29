@@ -55,5 +55,14 @@ $('.cakePic').on("click", function() {
   var thisSrc = $(this).attr("src");
   $('#modalPic').attr("src", thisSrc);
 })
+<<<<<<< HEAD
+=======
+
+$(".profImg").on("dblclick click", function() {
+  $("#TMC").text("JK IT'S ALL SEXUAL FAVORS");
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+})  
+  
+>>>>>>> 1ec66f8ff79b9d77aec2d3781747831dc1271324
   
 })
