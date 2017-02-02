@@ -498,7 +498,7 @@ transition: all .1s ease-in-out;
 }
 
 .close {
- color:#111;
+ color:#999;
 font-size: 80px;
 opacity: 0.7;
 transition: all .1s ease-in-out;
