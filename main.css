@@ -48,7 +48,11 @@ h4 {
 
 .jumbotron p {
   color: #ddd;
+<<<<<<< HEAD
+  font-size: 16px;
+=======
   font-size: .9em;
+>>>>>>> 1ec66f8ff79b9d77aec2d3781747831dc1271324
   font-family: Montserrat, sans-serif;
   letter-spacing: 4px;
 }
@@ -62,7 +66,10 @@ h4 {
 .price {
   font-family: 'Amatic SC', cursive;
   font-size: 60px;
+<<<<<<< HEAD
+=======
   text-shadow: 2px 2px 2px gray;
+>>>>>>> 1ec66f8ff79b9d77aec2d3781747831dc1271324
 }
 
 
@@ -142,7 +149,11 @@ glyphicon-lamp {
   border: 1px solid #feb0a9;
   border-radius: 0 !important;
   transition: box-shadow 0.5s;
+<<<<<<< HEAD
+  box-shadow: 0px 0px 30px -5px #777;
+=======
   box-shadow: 0px 0px 10px -5px #777;
+>>>>>>> 1ec66f8ff79b9d77aec2d3781747831dc1271324
 }
 
 .panel:hover {
@@ -440,6 +451,13 @@ footer .glyphicon {
   padding-bottom:20px;
 }
 
+<<<<<<< HEAD
+#googleMap {
+  box-shadow: 0px 0px 30px -5px #777;
+}
+
+=======
+>>>>>>> 1ec66f8ff79b9d77aec2d3781747831dc1271324
 hr {
   width: 60%
 }
@@ -461,10 +479,15 @@ hr {
   text-align:center;
 }
 
+<<<<<<< HEAD
+.modal-content {
+background-color: #eee;
+=======
 
 
 .modal-content {
 background-color: rgba(0,0,0,.5);
+>>>>>>> 1ec66f8ff79b9d77aec2d3781747831dc1271324
 width: 100vw;
 height:100vh;
 }
@@ -475,6 +498,28 @@ font-size: 22px;
 padding: 20px;
 padding-left:40px;
 padding-right:40px;
+<<<<<<< HEAD
+}
+
+.closeButton:hover {
+  background-color: #69d0bd;
+  color:white;
+}
+
+.close {
+ color:#555;
+font-size: 80px;
+opacity: 0.7;
+transition: all .1s ease-in-out;
+}
+
+.close:hover {
+  color:#feb0a9;
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+=======
 border:none;
 }
 
@@ -497,6 +542,7 @@ text-shadow: 0 0 5px #fff;
   transform: scale(1.1);
 }
 
+>>>>>>> 1ec66f8ff79b9d77aec2d3781747831dc1271324
 .modal-dialog {
    margin:0px;
 }
@@ -504,6 +550,9 @@ text-shadow: 0 0 5px #fff;
 #modalPic {
   max-height: 90vh;
   max-width: 600px;
+<<<<<<< HEAD
+  border: 5px outset pink;
+=======
   border: 1px solid black;
   margin-top: -40px;
 }
@@ -581,6 +630,81 @@ text-shadow: 0 0 5px #fff;
 
 .footy {
   background-color: #eee;
+>>>>>>> 1ec66f8ff79b9d77aec2d3781747831dc1271324
+}
+
+@media (min-width: 768px)
+{
+.modal-dialog {
+  margin:0;
+}
+}
+
+#social-section {
+    padding: 30px 0;
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.socialList {
+  list-style: none;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.social-item {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.fb {
+  color: #777;
+  font-size: 30px;
+  text-shadow: 0px 1px 1px #444; 
+}
+
+<<<<<<< HEAD
+.fb:hover {
+  color: #feb0a9
+}
+
+.fa-birthday-cake {
+  font-size: 90px;
+  opacity: 0.3;
+  color:white;
+  margin-top:20px;
+}
+
+.profImg {
+  width: 80%;
+  height:auto;
+  border: 2px solid pink;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px 0px pink;
+  animation-timing:ease-in-out;
+  animation: borderblob 4s infinite;
+}
+
+@keyframes borderblob {
+    50% {box-shadow: 1px 1px 32px -4px #FF1744;}
+}
+
+.centerImg {
+  text-align:center;
+}
+
+#myCarousel {
+  background-color: #42c4ac;
+  padding: 20px;
+}
+
+#myCarousel h4 {
+  color: white;
+}
+
+.footy {
+  background-color: #eee;
 }
 
 
@@ -588,6 +712,10 @@ text-shadow: 0 0 5px #fff;
 
 /* Parallax?
 
+=======
+/* Parallax?
+
+>>>>>>> 1ec66f8ff79b9d77aec2d3781747831dc1271324
 element.style {
     background-image: url(/sites/imore.com/files/styles/xlarge_wm_blw/public/field/image/2016/10/iphone-6s-iphone-7-plus.jpg?itok=6Hj7vbo8);
 }
