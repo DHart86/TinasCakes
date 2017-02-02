@@ -389,7 +389,7 @@ footer .glyphicon {
   }
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 720px) {
   .jumbotron h1 {
     text-align: center;
     margin: 25px 0;
@@ -404,7 +404,7 @@ footer .glyphicon {
 }
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 720px) {
   .jumbotron h1 {
    font-size: 4em;
   }
