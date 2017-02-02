@@ -556,16 +556,14 @@ text-shadow: 0 0 5px #fff;
 .profImg {
   width: 60%;
   height:auto;
-  border: 2px solid pink;
   border-radius: 125px;
-  box-shadow: 0px 0px 0px 0px pink;
   animation-timing:ease-in-out;
   animation: borderblob 4s infinite;
 }
 
-@keyframes borderblob {
+/*@keyframes borderblob {
     50% {box-shadow: 1px 1px 32px -2px #FF1744;}
-}
+}*/
 
 .centerImg {
   text-align:center;
